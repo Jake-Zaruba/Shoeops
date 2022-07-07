@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200;300;400;500;600;700;800&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@400;700;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Fira Sans", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #333;
+  overflow-x: hidden;
+  background-color: #eee;
+}
+
+::selection {
+  background: rgba(144, 206, 37, 0.405);
+}
+
+.container {
+  max-width: 148rem;
+}
+
+.header {
+  position: fixed;
+  background-color: none;
+  display: flex;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  justify-content: space-between;
+  padding: 2.4rem 3.2rem;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+#home,
+#projects,
+#employment,
+#about {
+  transition: all 0.3s;
+}
+
+.btn {
+  height: 3.2rem;
+  width: 3.2rem;
+  background: none;
+  border: none;
+}
+
+.icon {
+  stroke: white;
+  stroke-width: 0.1rem;
+}
+
+.main-nav-list {
+  position: relative;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  letter-spacing: 0.1rem;
+  text-decoration: none;
+}
+
+.main-nav-link {
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-weight: 300;
+  color: white;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  display: inline-block;
+  color: white;
+}
+
+#catalog {
+  position: relative;
+  transition: all 0.3s;
+}
+
+/* #mens {
+  position: absolute;
+  top: 0.8rem;
+  left: 7rem;
+  padding: 0rem 1rem;
+  background: #5c93aa;
+  border-radius: 1rem;
+  opacity: 0;
+  animation: mensDropdown 0.7s linear infinite;
+}
+
+#womens {
+  content: "Women's";
+  position: absolute;
+  top: 0.8rem;
+  left: 5.5rem;
+  padding: 0rem 1rem;
+  background: #d298e7;
+  border-radius: 1rem;
+  opacity: 0;
+  animation: mensDropdown 0.7s 0.5s linear infinite;
+}
+
+@keyframes mensDropdown {
+  0% {
+    opacity: 0;
+    transform: translateY(0rem);
+  }
+  5% {
+    opacity: 1;
+    transform: translateY(1rem);
+  }
+  90% {
+    transform: translateY(4rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(5rem);
+  }
+} */
+
+.section-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background: radial-gradient(#e4f7ff, #98cfe7);
+}
+
+.hero-title {
+  margin-top: 3rem;
+  font-family: "Zen Old Mincho", serif;
+  font-size: 20rem;
+  color: white;
+  transform: translateY(10rem);
+}
+
+.hero-img {
+  height: 60rem;
+  width: 60rem;
+  transform: rotate(9deg) translateY(3rem);
+  margin-bottom: 10rem;
+}
+
+.btn-hero {
+  transform: translateY(-13rem);
+  padding: 1rem 3rem;
+  font-size: 2.4rem;
+  font-weight: 300;
+  font-family: inherit;
+  text-align: center;
+  border: 0.1rem solid white;
+  color: white;
+  background: none;
+  cursor: pointer;
+}
